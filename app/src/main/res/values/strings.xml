@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Scientific Calculator</string>
+    <string name="button_add">+</string>
+    <string name="button_subtract">-</string>
+    <string name="button_multiply">*</string>
+    <string name="button_divide">/</string>
+    <string name="button_equals">=</string>
+    <string name="button_cos">cos</string>
+    <string name="button_sin">sin</string>
+    <string name="button_tan">tan</string>
+    <string name="button_pow">pow</string>
+    <string name="button_sqrt">sqrt</string>
+    <string name="button_log">log</string>
+    <string name="button_ln">ln</string>
+    <string name="button_mod">mod</string>
+    <string name="button_clear">C</string>
+</resources>

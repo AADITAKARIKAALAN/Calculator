@@ -1,0 +1,31 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.ScientificCalculator" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorAccentDark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorBackground">@color/background_color</item>
+        <item name="colorOnBackground">@color/black</item>
+        <item name="colorSurface">@color/background_color</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="android:windowBackground">@color/background_color</item>
+    </style>
+
+    <style name="CalculatorButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

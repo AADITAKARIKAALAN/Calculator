@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="SCIENTIFIC CALCULATOR"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edit_text_bg"
+        android:gravity="center"
+        android:inputType="none"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:backgroundTint="@color/background_color"
+        android:focusable="false"
+        android:cursorVisible="false"/>
+
+    <EditText
+        android:id="@+id/editTextOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextInput"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edit_text_bg"
+        android:gravity="center"
+        android:inputType="none"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:backgroundTint="@color/background_color"
+        android:focusable="false"
+        android:cursorVisible="false"/>
+
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextOutput"
+        android:columnCount="4"
+        android:rowCount="6"
+        android:padding="19dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="6dp">
+
+        <!-- First Row -->
+        <Button
+            android:id="@+id/button_7"
+            style="@style/CalculatorButton"
+            android:text="7" />
+        <Button
+            android:id="@+id/button_8"
+            style="@style/CalculatorButton"
+            android:text="8" />
+        <Button
+            android:id="@+id/button_9"
+            style="@style/CalculatorButton"
+            android:text="9" />
+        <Button
+            android:id="@+id/button_divide"
+            style="@style/CalculatorButton"
+            android:text="/" />
+
+        <!-- Second Row -->
+        <Button
+            android:id="@+id/button_4"
+            style="@style/CalculatorButton"
+            android:text="4" />
+        <Button
+            android:id="@+id/button_5"
+            style="@style/CalculatorButton"
+            android:text="5" />
+        <Button
+            android:id="@+id/button_6"
+            style="@style/CalculatorButton"
+            android:text="6" />
+        <Button
+            android:id="@+id/button_multiply"
+            style="@style/CalculatorButton"
+            android:text="*" />
+
+        <!-- Third Row -->
+        <Button
+            android:id="@+id/button_1"
+            style="@style/CalculatorButton"
+            android:text="1" />
+        <Button
+            android:id="@+id/button_2"
+            style="@style/CalculatorButton"
+            android:text="2" />
+        <Button
+            android:id="@+id/button_3"
+            style="@style/CalculatorButton"
+            android:text="3" />
+        <Button
+            android:id="@+id/button_subtract"
+            style="@style/CalculatorButton"
+            android:text="-" />
+
+        <!-- Fourth Row -->
+        <Button
+            android:id="@+id/button_0"
+            style="@style/CalculatorButton"
+            android:text="0" />
+        <Button
+            android:id="@+id/button_mod"
+            style="@style/CalculatorButton"
+            android:text="%" />
+        <Button
+            android:id="@+id/button_clear"
+            style="@style/CalculatorButton"
+            android:text="C" />
+        <Button
+            android:id="@+id/button_add"
+            style="@style/CalculatorButton"
+            android:text="+" />
+
+        <!-- Fifth Row -->
+        <Button
+            android:id="@+id/button_sin"
+            style="@style/CalculatorButton"
+            android:text="sin" />
+        <Button
+            android:id="@+id/button_cos"
+            style="@style/CalculatorButton"
+            android:text="cos" />
+        <Button
+            android:id="@+id/button_tan"
+            style="@style/CalculatorButton"
+            android:text="tan" />
+        <Button
+            android:id="@+id/button_pow"
+            style="@style/CalculatorButton"
+            android:text="^" />
+
+        <!-- Sixth Row -->
+        <Button
+            android:id="@+id/button_sqrt"
+            style="@style/CalculatorButton"
+            android:text="√" />
+        <Button
+            android:id="@+id/button_log"
+            style="@style/CalculatorButton"
+            android:text="log" />
+        <Button
+            android:id="@+id/button_ln"
+            style="@style/CalculatorButton"
+            android:text="ln" />
+        <Button
+            android:id="@+id/button_equals"
+            style="@style/CalculatorButton"
+            android:text="=" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGrid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="AJAY SURIYA K T"
+        android:textSize="35sp"
+        android:textColor="@color/black" />
+</RelativeLayout>

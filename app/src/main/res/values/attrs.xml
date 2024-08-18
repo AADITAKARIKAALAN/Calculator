@@ -1,0 +1,4 @@
+<resources>
+    <!-- Define your custom attributes here -->
+    <attr name="colorBackground" format="color"/>
+</resources>
